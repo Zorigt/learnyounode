@@ -1,0 +1,11 @@
+var array = process.argv;
+array = array.reverse();
+array.pop();
+array.pop();
+var result = array.reduce(function(a, b) {
+	return Number(a) + Number(b);		
+});
+
+console.log(result);
+return result;
+
